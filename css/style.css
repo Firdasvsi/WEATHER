@@ -1,0 +1,113 @@
+body,p{
+    margin: 0;
+}
+@font-face {
+    font-family: Inter;
+    font-weight: bold;
+    src: url(/fonts/InterBold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(/fonts/InterRegular.ttf);
+}
+html{
+    font-family: Inter;
+    font-weight: 400;
+}
+.container {
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    width: 380px;
+    height: 530px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.location_bar{
+    height: 44px;
+    display: flex;
+}
+
+.location_bar_button{
+    height: 100%;
+    width: 44px;
+    border: 1px solid rgba(0, 0, 0, 40%);
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.location_input{
+    height: 100%;
+    flex-grow: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+}
+
+.current_weather{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  
+}
+
+.current_weather .current-weather_icon {
+    width: 150px;
+    height: auto;
+}
+
+
+.current_weather_temperature{
+    font-size: 45px;
+}
+
+.current_weather_status{
+    font-size: 25px;
+}
+
+.forecast{
+ 
+        display: flex;
+        gap: 10px;
+        overflow-x: auto; /* Горизонтальный скролл */
+        white-space: nowrap; /* Это нужно, чтобы элементы не переносились на новую строку */
+}
+
+.forecast_element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.forecast_time{
+    font-size: 15px;
+    font-weight: bold;
+}
+.forecast_icon{
+    width: 40px;
+    height: 40px;
+}
+.forecast-temperature{
+    font-size: 15px;
+}
